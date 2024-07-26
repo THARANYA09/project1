@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox (Portfolio)</title>
+    <style>
+        body{
+            background-color:black;
+        }
+        table, th, td {
+          border:1px solid aliceblue;
+          border-collapse: collapse;
+          width: auto;
+          height: 50%;
+        }
+       .d1{
+        display: flex;
+        background-color:darkcyan;
+        flex-direction: row;
+       }
+       h1,h2,h3,p,th{
+        color: aliceblue;
+       }
+       .ul1{
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 1000px;
+        padding-top: 7px;
+       }
+       .li1{
+        color: aliceblue;
+        padding-right: 15px;
+       }
+       a{
+        text-decoration: none;
+        color: aliceblue;
+       }
+       .img{
+           height: 250px;
+           width: 250px;
+           margin: 40px;
+           margin-left: 100px;
+           border: 5px solid rgb(92, 237, 237);
+           border-radius: 50%;
+       }
+       .img2{
+           height: 250px;
+           width: 250px;
+    
+           margin-left: 100px;
+           border: 5px solid rgb(92, 237, 237);
+           border-radius: 50%;
+       }
+       .d2{
+        display: flex;
+       }
+       .d3{
+        display: flex;
+       }
+       .d4{
+        background-color: darkcyan;
+        height: 400px;
+        width: 100%;
+       }
+       .p1{
+        padding-top: 80px;
+        font-size: 25px;
+       }
+       .p2{
+        padding-left: 180px;
+        font-size: 17px;
+       }
+       .grid{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            background-color:darkcyan;
+        }
+        .grid-item{
+            background-color: rgb(233, 251, 245);
+            margin-left: 35px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            height: 350px;
+            width: 400px;
+
+        }
+        .cinfo{
+            background-color: darkcyan;
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="d1">
+           <h1 style="padding-left: 10px;">PORTFOLIO</h1>
+           <ul class="ul1">
+            <li class="li1"><a href="#Home">Home</a></li>
+            <li class="li1"><a href="#About">About</a></li>
+            <li class="li1"><a href="#Education">Education</a></li>
+            <li class="li1"><a href="#Skills">Skills</a></li>
+            <li class="li1"><a href="#Contact">Contact</a></li>
+           </ul>
+        </div>
+    </nav>
+    <section id="Home">
+    <h2 style="padding-left: 15px;">Home</h2>
+    <div class="d2">
+    <img src="https://st5.depositphotos.com/51587144/63511/v/450/depositphotos_635113146-stock-illustration-profile-image-female-avatar-social.jpg" class="img">
+    <p class="p1"><b>Hello!! I'm Tharanya S </b><br><br>
+    I am a BE Third Year Student of Sri Krishna College of Engineering and Technology,<br> Pursuing My Degree in Electronics and Communication Engineering.<br></p>
+    </section>
+    </div>
+       <a href="Tharanya resume.pdf" class="p2" target="_blank">
+          <button style="border: 3px solid rgb(92, 237, 237);">MyResume</button>
+       </a>
+       <section id="About">
+       <h2 style="padding-left: 15px;padding-top: 50px;">About</h2><br>
+       <div class="d3">
+       <p class="p2" style="padding-left: 15px;">Hello! I'm THARANYA S, BE Third Year Student of Sri Krishna College of Engineering and Technology<br>
+        A passionate and dedicated programmer with a strong foundation in software development. <br>
+        My journey into the world of programming began with C++, where I've developed a strong understanding of various concepts.<br>
+        I've had the opportunity to apply my skills during a comprehensive internship programs. Beyond coding, I am passionate about continuous learning.<br>
+        I have hands-on experience and have been trained extensively in various programming concepts through workshops,seminars,industrial trainings.
+        <br> I am constantly seeking opportunities to expand my knowledge and take on new challenges.
+        </p>
+        <img src="https://img.freepik.com/premium-vector/woman-with-laptop-sitting-office-desk-holding-pen-while-thinking-about-something-concept-illustration_270158-373.jpg?w=740" class="img2">
+    </section>
+    </div>
+   <section id="Education">
+    <h2 style="padding-left: 15px;padding-top: 50px;">Education</h2>
+    <form>
+        <table>
+            <tr height="60px">
+               <th width="20%"><form><label>S.NO</label></form></th>
+               <th width="40%"><form><label>EDUCATION</label></form></th>
+               <th width="20%"><form><label>PERCENTAGE</label></form></th>
+               <th width="20%"><form><label>PASS OUT YEAR</label></form></th>
+            </tr>
+            <br>
+            <tr height="50px">
+                <th>1</th>
+                <th>SRI KRISHNA COLLEGE OF ENGINEERING AND TECHNOLOGY (Bachelor's in Electronics & Communication Engineering)</th>
+                <th>8.34 (CGPA)</th>
+                <th>2026</th>
+            </tr>
+            <tr height="50px">
+                <th>2</th>
+                <th>ALVERNIA MATRICULATION HIGHER SECONDARY SCHOOL (HSC)</th>
+                <th>93%</th>
+                <th>2022</th>
+            </tr>
+            <tr height="50px">
+                <th>3</th>
+                <th>KATHIR VIDYAA MANDHIR (SSLC)</th>
+                <th>88%</th>
+                <th>2020</th>
+            </tr>
+        </table>
+    </form>
+    </section>
+    <section id="Skills">
+        <h2 style="padding-left: 15px;padding-top: 50px;">Skills</h2><br>
+        <div class="grid">
+            <div class="grid-item">
+                    <h2 style="color: black;">Personal Skills</h2>
+                    <ul style="color: black;">
+                        <li>Team Building</li>
+                        <li>Communication</li>
+                        <li>Problem solver</li>
+                        <li>Leadership</li>
+                    </ul>
+            </div>
+            <div class="grid-item"> <h2 style="color: black;">Technical Skills</h2> 
+                 <h3 style="color: black;">LAnguages Known</h3>
+                 <ul style="color: black;">
+                    <li>C++</li>
+                    <li>Java</li>
+                    <li>C</li>
+                 </ul>
+                  <h3 style="color: black;">Database</h3>
+                 <ul>
+                    <li>SQL</li>
+                 </ul>
+                 <h3 style="color: black;">HTML <br>CSS</h3>
+            </div>
+            <div class="grid-item"> <h2 style="color: black;">Area of Interest</h2> 
+                <ul>
+                    <li>Internet of Things</li>
+                    <li>Web development</li>
+                    <li>Machine Learning</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="Contact">
+        <h2 style="padding-left: 15px;padding-top: 50px;">Contact</h2>
+        <div class="d4">
+        <h3 class="cinfo"><b>Contact Me</b></h3><br>
+        
+        <h3 style="padding-left:70px ;"><img src="https://www.clipartmax.com/png/full/294-2948395_icons-made-by-freepik-from-www-phone-icon-for-resume-png.png" height="20px" width="20px">  +91 9655080556</3><br>
+        <h3  style="padding-left:70px ;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEwdxo0gurbI2EjZhZne5z4_eqZu86fii_Cw&s" height="20px" width="20px">  tharanya0904@gmail.com</h3>
+        <h3  style="padding-left:70px ;"><img src="https://assets.dryicons.com/uploads/icon/svg/10790/95f9bb40-f730-4c7a-94a4-3b0952044274.svg"height="25px" width="25px">  Coimbatore, Tamil Nadu</h3>
+        <h3  style="padding-left:70px ;"><img src="https://cdn2.iconfinder.com/data/icons/social-media-with-original-colors/256/icon-linkedin.png"height="20px" width="20px"><a href="https://www.linkedin.com/in/tharanya-s-4b685a291/">  //www.linkedin.com/in/tharanya-s-4b685a291/</a></h3>
+        <h3  style="padding-left:70px ;"><img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"height="20px" width="20px"><a href="https://github.com/THARANYA09">  https://github.com/THARANYA09</a></h3><br>
+    </div>
+    </section>
+</body>
+</html>>
