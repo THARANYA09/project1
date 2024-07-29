@@ -1,0 +1,30 @@
+#ids2{
+    background-color: blueviolet;
+    font-size: 30px;
+}
+h3{
+    color: rgb(237, 8, 8);
+}
+.box{
+    font-size: 20px;
+    background-color: rgb(87, 197, 43);
+    margin: 70px;
+    height: 50%;
+    border:15px solid rgb(2, 2, 2);
+    border-radius: 20px;
+    padding:20px;
+}
+ul{
+    background-color: orange;
+    margin: 70px;
+    padding-left: 30px;
+    border: 3px dotted black;
+    border-radius: 20px;
+    list-style-type: lower-roman;
+}
+.l2{
+    background-color:rgb(81, 165, 42);
+    color: rgb(236, 234, 234);
+    height: 20px;
+    width: 40px;
+}
