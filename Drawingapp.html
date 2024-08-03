@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Drawing App</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+             background-color: #f0f0f0;
+        }
+        .d1{
+            margin-bottom: 10px;
+            padding-top: 20px;
+        }
+        canvas {
+            border: 1px solid #000;
+            cursor: crosshair;
+}
+    </style>
+</head>
+<body>
+    <div class="d1">
+        <label for="colorPicker">Color:</label>
+        <input type="color" id="colorPicker">
+
+        <label for="penSize">Pen Size:</label>
+        <input type="range" id="penSize" min="1" max="5">
+
+        <button id="clearButton">Clear</button>
+        <h1 style="padding-right: 10px;">Enjoy your drawing here !!</h1>
+    </div>
+    <canvas id="drawingCanvas" width="800" height="600"></canvas>
+    <script src="drawingapp.js"></script>
+</body>
+</html>
